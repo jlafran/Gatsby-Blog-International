@@ -54,7 +54,7 @@ const Layout = (props) => {
             )}
           </FormattedMessage>
           <Header isHome={isHome} homeLink={homeLink} langs={langsMenu} url={url} menu={menu} />
-          {(url === '/' || url === '/pt/') && <Welcome author={author} langKey={langKey} />}
+          {(url === '/' || url === '/pt/' || url === '/es/' ) && <Welcome author={author} langKey={langKey} />}
           {/* {isHome && <Welcome author={author} langKey={langKey} />} */}
           <Container>
             <main>{children}</main>

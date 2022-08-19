@@ -13,13 +13,18 @@ const Index = (props) => {
   const featuredPosts = props.data.featured.edges.map((p) => p.node);
   const { author } = props.data.site.siteMetadata;
   const { langKey } = props.pageContext;
+  const getTitle = () => ({
+    en: `Featured posts `,
+    pt: `Posts em destaque `,
+    es: `Posteos destacados `
+  });
 
   return (
     <Layout location={props.location}>
       <Wrapper>
         <FeaturedContainer>
           <H2>
-            <FormattedMessage id="index.featured">{(txt) => <span>{txt}</span>}</FormattedMessage>
+            <span dangerouslySetInnerHTML={{ __html: getTitle()[langKey] }} />
           </H2>
           <PostCardList posts={featuredPosts} author={author} />
         </FeaturedContainer>
