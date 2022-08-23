@@ -21,6 +21,7 @@ module.exports = {
     { label: 'blog', slug: '/blog/' },
     { label: 'talks', slug: '/talks/' },
     { label: 'contact', slug: '/contact/' },
+    { label: 'tags', slug: '/tags/' },
     { label: 'call', link: 'http://call.hugo.im/' },
   ],
   languages,

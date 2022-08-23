@@ -7,6 +7,17 @@ import BtnLink from '../../BtnLink';
 import styled from 'styled-components';
 import { media } from '../../../constants/responsive';
 import NewsletterForm from './NewsletterForm';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
+import "./styles.css";
+
+// import required modules
+import { Navigation } from "swiper";
 
 const Index = (props) => {
   const allStoriesPosts = props.data.all.edges.map((p) => p.node);
@@ -22,6 +33,17 @@ const Index = (props) => {
   return (
     <Layout location={props.location}>
       <Wrapper>
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
         <FeaturedContainer>
           <H2>
             <span dangerouslySetInnerHTML={{ __html: getTitle()[langKey] }} />
