@@ -1,0 +1,114 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+  }
+  
+  input{
+    display: none;
+  }
+  body{
+    --bg-color : #FFEFD5;
+    --bg-color-el : #ecdcc0;
+    --color-text: #fff;
+    width: 100vw;
+    height: 100vh;
+    background-color : var(--bg-color);
+    display: flex;
+    overflow: hidden;
+    input:checked{
+      ~ .button{
+          svg{
+            transform: rotateZ(-90deg);
+            transition: transform 300ms cubic-bezier( .25, 1, .5, 1);
+          }
+      }
+      ~.marquees{
+        flex-direction: row; 
+        .marquees__item{
+          flex-direction: column;
+          &.marquees__item--reverse{
+            .marquees__group-item{
+              animation: scroll-y 10s linear infinite reverse;
+            }
+          }
+          .marquees__group-item{
+            flex-direction: column;
+            animation: scroll-y 10s linear infinite;
+            svg {
+              --size-t: clamp(10rem, 1rem + 57vmin, 53rem);
+              width: calc( var(--size-t) / 2.5 );
+              aspect-ratio: 1;
+              margin: .5em;
+              padding: 2.8em;
+            }
+          }
+        }
+      }
+     }
+    .button{
+          --size: 3rem;
+      position: fixed;
+      left: 1rem;
+      top: 1rem;
+      border-radius: 50%;
+      outline: none;
+      border: none;
+      background-color: var(--bg-color-el);
+      width: var(--size);
+      height: var(--size);
+      padding: calc( var(--size) / 4 );
+      svg{
+        width: 100%;
+        transform: rotateZ(0);
+        transition: transform 300ms cubic-bezier( .25, 1, .5, 1);
+        fill: navy;
+      }
+      
+    }
+    .marquees {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      .marquees__item {
+        display: flex;
+        .marquees__group-item {
+          display: flex;
+          animation: scroll-x 10s linear infinite;
+          svg {
+            background-color: var(--bg-colo-el);
+            width: clamp(10rem, 1rem + 40vmin, 20rem);
+            aspect-ratio: 16/9;
+            background-color: var(--bg-color-el);
+            border-radius: 10px;
+            margin: .5em;
+            padding: 1.8rem;
+            fill: navy;
+          }
+        }
+        &.marquees__item--reverse{
+          .marquees__group-item{
+            animation: scroll-x 10s linear infinite reverse;
+          }
+       }
+      }
+    } 
+  }
+  
+  @keyframes scroll-x {
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes scroll-y {
+    from{
+      transform: translateY(0);
+    }
+    to{
+      transform: translateY(-100%);
+    }
+  } 

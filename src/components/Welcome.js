@@ -5,12 +5,22 @@ import { Grid, Cell } from 'styled-css-grid';
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaDribbble, FaGithub } from 'react-icons/fa';
 import { media } from '../constants/responsive';
 import Avatar from './img/welcome_avatar.png';
+import DATAES from '../data/es.json';
+import DATAEN from '../data/en.json';
+import DATAPT from '../data/pt.json';
+
+const stringifyES = JSON.stringify(DATAES);
+const bienvenida = JSON.parse(stringifyES);
+const stringifyEN = JSON.stringify(DATAEN);
+const bienvenidaEN = JSON.parse(stringifyEN);
+const stringifyPT = JSON.stringify(DATAPT);
+const bienvenidaPT = JSON.parse(stringifyPT);
 
 const Welcome = ({ author, className, langKey }) => {
   const getIntro = () => ({
     en: `Hi! I'm <span class="name">Hugo</span> 👋 `,
     pt: `Olá! Eu sou o <span class="name">Hugo</span> 👋 `,
-    es: `Hola soy <span class="name">Hugo</span> 👋 `
+    es: `Hola soy <span class="name">Hugo</span> 👋 `,
   });
   const getBio = () => ({
     en:
@@ -20,7 +30,9 @@ const Welcome = ({ author, className, langKey }) => {
     es:
       'Soy experto en tecnologia, especialista em desenvolvimento de produtos e manager com cerca de 20 anos de experiência em software e consultoria. Trabalho como Venture CTO e Engineering Lead na <a href="https://www.bcgdv.com"><b>BCG Digital Ventures</b></a>, onde inventamos, construímos e investimos em startups com as empresas mais influentes do mundo. Tenho trabalhado recentemente no setor de Health Tech, principalmente em software como Dispositivo Médico e aplicativos sob prescrição para o mercado alemão (DiGA).',
   });
-  {console.log(langKey, 'langkey')}
+  {
+    console.log(langKey, 'langkey');
+  }
   return (
     <MainWrapper className={className}>
       <Wrapper>
@@ -28,9 +40,20 @@ const Welcome = ({ author, className, langKey }) => {
         <BioWrapper middle>
           <BioContainer>
             <Name>
-              <span dangerouslySetInnerHTML={{ __html: getIntro()[langKey] }} />
+              <span dangerouslySetInnerHTML={{ __html: bienvenidaEN.welcome }} />
+              {/* {{
+                if(langKey = 'es') {
+                  <span dangerouslySetInnerHTML={{ __html: bienvenida.welcome }} />;
+                },
+                if(langKey = 'en') {
+                  <span dangerouslySetInnerHTML={{ __html: bienvenidaEN.welcome }} />;
+                },
+                if(langKey = 'pt') {
+                  <span dangerouslySetInnerHTML={{ __html: bienvenidaPT.welcome }} />;
+                },
+              }} */}
             </Name>
-            <Bio dangerouslySetInnerHTML={{ __html: getBio()[langKey] }} />
+            <Bio dangerouslySetInnerHTML={{ __html: bienvenida.welcome }} />
             <SocialLinks>
               <li>
                 <A href="http://twitter.hugo.im" target="_blank" rel="noreferrer noopener">
