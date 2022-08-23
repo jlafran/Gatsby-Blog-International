@@ -12,7 +12,6 @@ import theme from '../themes/theme';
 import { getLangs, getUrlForLang, getCurrentLangKey, isHomePage } from 'ptz-i18n';
 import Helmet from 'react-helmet';
 import Welcome from './Welcome';
-import OurClients from './OurClients';
 
 const messages = { en, pt };
 
@@ -60,7 +59,6 @@ const Layout = (props) => {
           <Container>
             <main>{children}</main>
           </Container>
-          <OurClients></OurClients>
           <Footer author={author} langs={langsMenu} sourceCodeLink={sourceCodeLink} />
           <GlobalStyle />
         </BodyContainer>
