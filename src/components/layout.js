@@ -12,6 +12,7 @@ import theme from '../themes/theme';
 import { getLangs, getUrlForLang, getCurrentLangKey, isHomePage } from 'ptz-i18n';
 import Helmet from 'react-helmet';
 import Welcome from './Welcome';
+import OurClients from './OurClients';
 
 const messages = { en, pt };
 
@@ -54,11 +55,12 @@ const Layout = (props) => {
             )}
           </FormattedMessage>
           <Header isHome={isHome} homeLink={homeLink} langs={langsMenu} url={url} menu={menu} />
-          {(url === '/' || url === '/pt/' || url === '/es/' ) && <Welcome author={author} langKey={langKey} />}
+          {(url === '/' || url === '/pt/' || url === '/es/') && <Welcome author={author} langKey={langKey} />}
           {/* {isHome && <Welcome author={author} langKey={langKey} />} */}
           <Container>
             <main>{children}</main>
           </Container>
+          <OurClients></OurClients>
           <Footer author={author} langs={langsMenu} sourceCodeLink={sourceCodeLink} />
           <GlobalStyle />
         </BodyContainer>
