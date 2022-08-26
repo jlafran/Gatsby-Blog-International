@@ -61,17 +61,6 @@ const Layout = (props) => {
           <Container>
             <main>{children}</main>
           </Container>
-          <Productos></Productos>
-      <br></br>
-      <br/>
-      <br></br>
-      <br/>
-      <br></br>
-      <br/>
-      <br></br>
-      <br/>
-      
-      <OurTeam></OurTeam>
           <Footer author={author} langs={langsMenu} sourceCodeLink={sourceCodeLink} />
           <GlobalStyle />
         </BodyContainer>

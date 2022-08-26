@@ -83,8 +83,18 @@ const Welcome = ({ author, className, langKey }) => {
         </PictureContainer>
         <RightGapCell />
       </Wrapper>
+      <Productos></Productos>
+          <br></br>
+          <br />
+          <br></br>
+          <br />
+          <br></br>
+          <br />
+          <br></br>
+          <br />
+
+          <OurTeam></OurTeam>
     </MainWrapper>
-    
   );
 };
 
