@@ -1,0 +1,30 @@
+[
+    {
+        "title":"Migraciones de Sistemas Legacy",
+        "text":"Actualiza sistemas a través de arquitecturas robustas y preparada para el futuro.",
+        "titleInfo":"",
+        "info":"Brindamos un camino comprobado para diseñar estrategias y construir las plataformas digitales que serán la columna vertebral de la transformación de su negocio.",
+        "url":"/webdev/legacy"
+    },
+    {
+        "title":"Automatizar",
+        "text":"Automatizar procesos repetitvos es una solución rapida y adaptable. Reduciendo costos y evitando a tus empleados ejectura tareas monotonas.",
+        "titleInfo":"",
+        "info":"Trabajamos con herramientas como BI, Alteryx y RPA para automatizar y mostrar información de forma clara, dando insights a tu negocio.",
+        "url":"/webdev/automation"
+    },
+    {
+        "title":"Aplicaciones Web", 
+        "text":"Desarrollo de Aplicaciones en la Nube, utilizando Microservicios y APIs.",
+        "titleInfo":"",
+        "info":"La mejor forma de estar un paso adelante. Hoy para estar a la vanguardia del desarrollo de negocios digitales es necesario migrar a sistemas en la nube.",
+        "url":"/webdev/webapp"
+    },
+    {
+        "title":"Aplicaciones Locales",
+        "text":"Una aplicación de escritorio es una gran solución para actualizar sistemas legacy.",
+        "titleInfo":"",
+        "info":"Estos sistemas pueden ser opciones mas economicas, seguras y adaptarse velozmente al workflow actual.",
+        "url":"/webdev/local"
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "title":"Ayudamos a las empresas a crear soluciones que brindan",
+        "subtitle":"Adaptabilidad, Escalabilidad y Acceso a la información.",
+        "p1":"Utilizamos tecnologías de última generación como APIs, microservicios y mejores prácticas de desarrollo nativo en la nube. Estos permiten segmentar el sistema en pequeñas partes independientes, esto le da escalabilidad ya que una nuevo requerimiento puede ser inyectada en un futuro. Y independiente del UX/UI o la vista.",
+        "p2":"Esto nos permite que el almacenamiento de datos y el procesamiento de la aplicación se realice en la nube y no en tu ordenador, evitando perdida de informacion y dando acceso a aplicaciones robustas, desde dispositivos de mínimos requerimientos.  Desplegando las aplicaciones a tus clientes, permitiéndoles mantener una via constante de informacion y utilidad con tu negocio, desde cualquier lado y cualquier tipo de entorno de trabajo. ",
+        "p3":"Por ultimo, las Web Apps nos permiten minar métricas y inyectar análisis de los datos dentro de la aplicación. Esto brinda muchísima informacion util para la toma de desiciones estratégica y permite que conozcas mejor tu negocio y clientes."
+
+    }
+]

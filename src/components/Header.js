@@ -110,9 +110,9 @@ const Wrapper = styled.header`
 const MenuContainer = styled(Cell)``;
 
 const LanguageContainer = styled(Cell)`
-width: 100%;
-display: flex;
-justify-content: space-around;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 `;
 
 Header.propTypes = {

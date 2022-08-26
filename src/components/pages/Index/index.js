@@ -16,7 +16,7 @@ const Index = (props) => {
   const getTitle = () => ({
     en: `Featured posts `,
     pt: `Posts em destaque `,
-    es: `Posteos destacados `
+    es: `Posteos destacados `,
   });
 
   return (

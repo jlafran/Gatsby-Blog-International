@@ -51,8 +51,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Hugo Nogueira',
-        short_name: 'Hugo Nogueira',
+        name: 'RTI',
+        short_name: 'RTI',
         icons: [
           {
             src: '/logo.svg',
@@ -127,5 +127,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-twitter`,
+    `gatsby-plugin-sass`,
   ],
 };

@@ -1,11 +1,11 @@
 const authors = {
   hugomn: {
-    name: 'Hugo Nogueira',
+    name: 'RTI',
     additionalName: 'hugomn',
     address: 'Berlin DE',
     birthDate: '1986-09-01',
     birthPlace: 'Juiz de Fora BR',
-    brand: 'Hugo Nogueira, Software Engineer, Lead Front-end engineer, Senior ReactJs developer',
+    brand: 'RTI',
     children: '...',
     email: 'hugomn@gmail.com',
     familyName: 'Nogueira',

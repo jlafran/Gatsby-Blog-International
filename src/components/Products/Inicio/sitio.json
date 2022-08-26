@@ -1,0 +1,31 @@
+[
+    {
+        "title":"Diseño de Sitios Web",
+        "text":"Un sitio web único, flexible y robusto. Es uno de los mejores representantes de tu producto.",
+        "titleInfo":"",
+        "info":"Contamos con un equipo multidiciplinario para armar tu sitio web como tu producto lo merce. Contamos con diseñadores, programadores Frontend y Backend que trabajan con las ultimas tecnologias del mercado. ",
+        "url":"/webdev/website"
+    },
+    {
+        "title":"Desarrollo de Sitios Web",
+        "text":"Un sitio web único, flexible y robusto. Es uno de los mejores representantes de tu producto.",
+        "titleInfo":"",
+        "info":"Contamos con un equipo multidiciplinario para armar tu sitio web como tu producto lo merce. Contamos con diseñadores, programadores Frontend y Backend que trabajan con las ultimas tecnologias del mercado. ",
+        "url":"/webdev/website"
+    },
+    {
+        "title":"Armado de Porfolios o CV",
+        "text":"Un portfolio o CV Online para mostrar tus trabajos y conocimientos, es la nueva normalidad.",
+        "titleInfo":"",
+        "info":"Podemos ayudarte en el diseño, desarrollo y produccion de contenido para tu portfolio personalizado o CV.",
+        "url":"/webdev/portfolio"
+    },
+    {
+        "title":"Branding", 
+        "text":"Desarrollo de Aplicaciones en la Nube, utilizando Microservicios y APIs.",
+        "titleInfo":"",
+        "info":"La mejor forma de estar un paso adelante. Hoy para estar a la vanguardia del desarrollo de negocios digitales es necesario migrar a sistemas en la nube.",
+        "class":"default",
+        "url":"/webdev"
+    }
+]

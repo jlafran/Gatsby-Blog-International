@@ -1,0 +1,30 @@
+[
+    {
+        "title":"Aplicaciones Web", 
+        "text":"Desarrollo de Aplicaciones en la Nube, utilizando Microservicios y APIs.",
+        "titleInfo":"",
+        "info":"La mejor forma de estar un paso adelante. Hoy para estar a la vanguardia del desarrollo de negocios digitales es necesario migrar a sistemas en la nube.",
+        "url":"/webdev/webapp"
+    },
+    {
+        "title":"Aplicaciones Locales",
+        "text":"Una aplicación de escritorio es una gran solución para actualizar sistemas legacy.",
+        "titleInfo":"",
+        "info":"Estos sistemas pueden ser opciones mas economicas, seguras y adaptarse velozmente al workflow actual.",
+        "url":"/webdev/local"
+    },
+    {
+        "title":"Desarrollo de Sitios Web",
+        "text":"Un sitio web único, flexible y robusto. Es uno de los mejores representantes de tu producto.",
+        "titleInfo":"",
+        "info":"Contamos con un equipo multidiciplinario para armar tu sitio web como tu producto lo merce. Contamos con diseñadores, programadores Frontend y Backend que trabajan con las ultimas tecnologias del mercado. ",
+        "url":"/webdev/website"
+    },
+    {
+        "title":"Aplicaciones Mobiles",
+        "text":"Desarrollamos aplicaciones para ambas plataformas tanto Android, como IOS.",
+        "titleInfo":"",
+        "info":"Hoy en dia una app movil no solo da utilidad a tus clientes, sino que funciona como una manera de acrecentar la imagen de tu marca.",
+        "url":"/webdev/mobile"
+    }
+]

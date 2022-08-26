@@ -10,6 +10,7 @@
     "gatsby": "2.29.2",
     "gatsby-alias-imports": "1.0.6",
     "gatsby-plugin-google-fonts": "1.0.1",
+    "gatsby-plugin-sass": "^5.21.0",
     "gatsby-plugin-segment-analytics": "0.3.1",
     "gatsby-plugin-twitter": "2.7.0",
     "gatsby-remark-figure-caption": "^2.0.0",

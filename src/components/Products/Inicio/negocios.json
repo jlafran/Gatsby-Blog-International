@@ -1,0 +1,32 @@
+[
+    {
+        "title":"Nuevas Modelos de Negocio",
+        "text":"Formas disruptivas de crear nuevo valor empresarial.",
+        "titleInfo":"",
+        "info":"La digitalización y las altas expectativas de los consumidores están cambiando la forma en que interactuamos entre nosotros, y las organizaciones que sepan gestionarlo tendrán éxito.",
+        "url":"/webdev/negocio"
+    },
+    {
+        "title":"Arma tu StartUp",
+        "text":"Te ayudamos a ejecutar tu vision en el armado del producto de tu Startup.",
+        "titleInfo":"",
+        "info":"Desde la planificación estrategica, organización de recursos, armado del modelo de negocio, desarrollo del producto, personalidad de la marca y diseño. Te guiamos a traves del camino.",
+        "url":"/webdev/producto"
+    },
+    {
+        "title":"Branding", 
+        "text":"Desarrollo de Aplicaciones en la Nube, utilizando Microservicios y APIs.",
+        "titleInfo":"",
+        "info":"La mejor forma de estar un paso adelante. Hoy para estar a la vanguardia del desarrollo de negocios digitales es necesario migrar a sistemas en la nube.",
+        "class":"default",
+        "url":"/webdev"
+    },
+    {
+        "title":"Data Science", 
+        "text":"Desarrollo de Aplicaciones en la Nube, utilizando Microservicios y APIs.",
+        "titleInfo":"",
+        "info":"La mejor forma de estar un paso adelante. Hoy para estar a la vanguardia del desarrollo de negocios digitales es necesario migrar a sistemas en la nube.",
+        "class":"default",
+        "url":"/webdev"
+    }
+]

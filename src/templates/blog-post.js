@@ -147,6 +147,12 @@ class BlogPostRoute extends React.PureComponent {
           /> */}
           <Content dangerouslySetInnerHTML={{ __html: post.html }} />
           <Tags tags={post.fields.tagSlugs} />
+          <Comments
+            shortname={disqusShortname}
+            identifier={post.fields.slug}
+            title={post.frontmatter.title}
+            url={url}
+          />
           <ShareWidget disqusShortname={disqusShortname} url={url} message={post.excerpt} />
           {/* <PostCardList
             posts={post.fields.readNextPosts}

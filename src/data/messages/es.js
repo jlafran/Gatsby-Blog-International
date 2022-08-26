@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Hugo Nogueira',
-  'header.title': 'Hugo Nogueira',
+  title: 'RTI',
+  'header.title': 'RTI',
   'header.subTitle': 'Engineering lead and agile manager.',
   home: 'Página principal',
   about: 'Sobre',

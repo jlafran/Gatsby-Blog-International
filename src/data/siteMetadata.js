@@ -5,7 +5,7 @@ module.exports = {
   description:
     'Engineering Lead at BCG Digital Ventures. I build high-performance products and teams. Berlin, Germany.',
   author: {
-    name: 'Hugo Nogueira',
+    name: 'RTI',
     bio:
       "I'm an engineering lead at <a href=\"https://www.bcgdv.com\"><b>BCG Digital Ventures</b></a>. We invent, build and invest in startups with the world's most influential companies. I build high-performance products and teams.  I'm a software engineer with 12+ years of experience and I've been managing technology teams in the last 8 years.",
     homeCity: 'Berlin',

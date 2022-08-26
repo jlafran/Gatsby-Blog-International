@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+:root {
+    /* COLORS */
+    --background1: #191E22;
+    --background2: #191E22;
+    --font_color:  #191E22;
+    --font_color2: #191E22;
+    --line_color: #191E22;
+}
+
+.section-product{
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    margin-top: 7rem;
+
+}
+.container-product{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    width: 100%;
+    align-items: flex-end;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex;
+    flex-wrap: wrap;
+    padding-top: 0vh;
+    padding-bottom: 3vh;
+    padding-left: 4vh;
+    justify-content:flex-end;
+}
+.card:nth-child(4n+1) {
+	padding-left: 0;
+}
+.card:hover .tittle-card{
+    color:hsla(196, 61%, 58%, .75);
+    transition:opacity .5s;
+}
+.card:hover .img-general{
+    opacity: .5;
+    transition:opacity .5s;
+}
+
+
+.wrap-product{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.text-hoover{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #191E22;
+    margin-left: 9vh;
+    position: relative;
+    z-index: 3;
+}
+    .text-hoover:nth-child(0n+1) {
+        margin-left: 0;
+    }
+    
+    .text-hoover1::before {
+      content: '';
+      background-image: linear-gradient(45deg, #EB58E2, #2EBDFF);
+      background-image: linear-gradient(45deg, #EEE, #FF0F3E);
+      background-image: linear-gradient(45deg, #1d5ca7, #eeaeca);
+      background-image: linear-gradient(45deg, #079BF6, #F82075);
+      background-image: linear-gradient(45deg, #F60D54, #FCE559);
+      background-image: linear-gradient(45deg, #06D1BB, #068299);
+      background-image: linear-gradient(45deg, #78b8f3, #af4297);
+      background-image: linear-gradient(45deg,#FF39C4, #5F7CF1);
+      position: absolute;
+      left: 0;
+      bottom: -0.1rem;
+      width: 100%;
+      height: 20%;
+      z-index: -1;
+      transition: all .3s ease-in-out;
+    }
+    .text-hoover1:hover::before {
+      bottom: 0;
+      height: 100%;
+    }
+    
+    .text-hoover2::before {
+        content: '';
+        background-image: linear-gradient(45deg, #EB58E2, #2EBDFF);
+        background-image: linear-gradient(45deg, #EEE, #FF0F3E);
+        background-image: linear-gradient(45deg, #1d5ca7, #eeaeca);
+        
+        position: absolute;
+        left: 0;
+        bottom: -0.1rem;
+        width: 100%;
+        height: 20%;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+      }
+      .text-hoover2:hover::before {
+        bottom: 0;
+        height: 100%;
+      }
+
+      .text-hoover3::before {
+        content: '';
+        background-image: linear-gradient(45deg, #EB58E2, #2EBDFF);
+        background-image: linear-gradient(45deg, #EEE, #FF0F3E);
+        background-image: linear-gradient(45deg, #1d5ca7, #eeaeca);
+        background-image: linear-gradient(45deg, #079BF6, #F82075);
+        background-image: linear-gradient(45deg, #F60D54, #FCE559);
+        background-image: linear-gradient(45deg, rgb(191, 207, 205), #068299);
+        
+        position: absolute;
+        left: 0;
+        bottom: -0.1rem;
+        width: 100%;
+        height: 20%;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+      }
+      .text-hoover3:hover::before {
+        bottom: 0;
+        height: 100%;
+      }
+
+      .text-hoover4::before {
+        content: '';
+        background-image: linear-gradient(45deg, #EB58E2, #2EBDFF);
+        background-image: linear-gradient(45deg, #EEE, #FF0F3E);
+        position: absolute;
+        left: 0;
+        bottom: -0.1rem;
+        width: 100%;
+        height: 20%;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+      }
+      .text-hoover4:hover::before {
+        bottom: 0;
+        height: 100%;
+      }
+
+      .text-hoover5::before {
+        content: '';
+        background-image: linear-gradient(45deg, #EB58E2, #2EBDFF);
+        background-image: linear-gradient(45deg, #EEE, #FF0F3E);
+        background-image: linear-gradient(45deg, #1d5ca7, #eeaeca);
+        background-image: linear-gradient(45deg, #079BF6, #F82075);
+        
+        position: absolute;
+        left: 0;
+        bottom: -0.1rem;
+        width: 100%;
+        height: 20%;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+      }
+      .text-hoover5:hover::before {
+        bottom: 0;
+        height: 100%;
+      }

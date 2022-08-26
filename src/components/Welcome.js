@@ -9,6 +9,9 @@ import DATAES from '../data/es.json';
 import DATAEN from '../data/en.json';
 import DATAPT from '../data/pt.json';
 
+import Productos from '../components/Products/ProductsFilter';
+import OurTeam from '../components/OurTeam/OurTeam';
+
 const stringifyES = JSON.stringify(DATAES);
 const bienvenidaes = JSON.parse(stringifyES);
 const stringifyEN = JSON.stringify(DATAEN);
@@ -26,13 +29,10 @@ const Welcome = ({ author, className, langKey }) => {
     en: bienvenidaen.introduccion,
     pt: bienvenidapt.introduccion,
     es: bienvenidaes.introduccion,
-  
   });
   {
     console.log(langKey, 'langkey');
   }
-
-
 
   return (
     <MainWrapper className={className}>
@@ -41,7 +41,7 @@ const Welcome = ({ author, className, langKey }) => {
         <BioWrapper middle>
           <BioContainer>
             <Name>
-              <span dangerouslySetInnerHTML={{ __html: getIntro()[langKey] }}/>
+              <span dangerouslySetInnerHTML={{ __html: getIntro()[langKey] }} />
             </Name>
             <Bio dangerouslySetInnerHTML={{ __html: getBio()[langKey] }} />
             <SocialLinks>
@@ -79,11 +79,12 @@ const Welcome = ({ author, className, langKey }) => {
           </BioContainer>
         </BioWrapper>
         <PictureContainer center>
-          <ProfilePicture src={Avatar} alt="Hugo Nogueira" width={410} height={341} />
+          <ProfilePicture src={Avatar} alt="RTI" width={410} height={341} />
         </PictureContainer>
         <RightGapCell />
       </Wrapper>
     </MainWrapper>
+    
   );
 };
 
