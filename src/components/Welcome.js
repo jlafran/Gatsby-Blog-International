@@ -11,6 +11,7 @@ import DATAPT from '../data/pt.json';
 
 import Productos from '../components/Products/ProductsFilter';
 import OurTeam from '../components/OurTeam/OurTeam';
+import JoinUs from '../components/JoinUs/JoinUs';
 
 const stringifyES = JSON.stringify(DATAES);
 const bienvenidaes = JSON.parse(stringifyES);
@@ -94,6 +95,7 @@ const Welcome = ({ author, className, langKey }) => {
           <br />
 
           <OurTeam></OurTeam>
+          <JoinUs></JoinUs>
     </MainWrapper>
   );
 };
