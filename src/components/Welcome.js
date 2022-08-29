@@ -12,6 +12,9 @@ import DATAPT from '../data/pt.json';
 import Productos from '../components/Products/ProductsFilter';
 import OurTeam from '../components/OurTeam/OurTeam';
 import JoinUs from '../components/JoinUs/JoinUs';
+import ProductCard from '../components/ProductCards/ProductCard';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const stringifyES = JSON.stringify(DATAES);
 const bienvenidaes = JSON.parse(stringifyES);
@@ -85,17 +88,18 @@ const Welcome = ({ author, className, langKey }) => {
         <RightGapCell />
       </Wrapper>
       <Productos></Productos>
-          <br></br>
-          <br />
-          <br></br>
-          <br />
-          <br></br>
-          <br />
-          <br></br>
-          <br />
+      <br></br>
+      <br />
+      <br></br>
+      <br />
+      <br></br>
+      <br />
+      <br></br>
+      <br />
+      <ProductCard></ProductCard>
 
-          <OurTeam></OurTeam>
-          <JoinUs></JoinUs>
+      <OurTeam></OurTeam>
+      <JoinUs></JoinUs>
     </MainWrapper>
   );
 };
