@@ -13,6 +13,7 @@ import Productos from '../components/Products/ProductsFilter';
 import OurTeam from '../components/OurTeam/OurTeam';
 import JoinUs from '../components/JoinUs/JoinUs';
 import ProductCard from '../components/ProductCards/ProductCard';
+import Inicial from '../components/Inicial/Inicial';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -96,6 +97,7 @@ const Welcome = ({ author, className, langKey }) => {
       <br />
       <br></br>
       <br />
+      <Inicial></Inicial>
       <ProductCard></ProductCard>
 
       <OurTeam></OurTeam>

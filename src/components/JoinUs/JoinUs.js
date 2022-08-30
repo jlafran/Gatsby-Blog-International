@@ -12,7 +12,6 @@ function JoinUs() {
             dolorum commodi perspiciatis dicta nostrum minus esse, totam officia, quibusdam amet quas tempora?
             Voluptatibus, esse.
           </p>
-
         </header>
 
         <section class="columns">
@@ -23,8 +22,8 @@ function JoinUs() {
               praesentium dolor totam voluptatibus recusandae?
             </p>
             <div class="button-container">
-            <div class='button -regular center'>Read More</div></div>
-
+              <div class="button -regular center">Read More</div>
+            </div>
           </div>
 
           <div class="column">
@@ -35,7 +34,8 @@ function JoinUs() {
               vero laborum blanditiis nostrum.
             </p>
             <div class="button-container">
-            <div class='button -regular center'>Read More</div></div>
+              <div class="button -regular center">Read More</div>
+            </div>
           </div>
 
           <div class="column">
@@ -45,7 +45,8 @@ function JoinUs() {
               sit amet consectetur adipisicing elit. Sequi ratione architecto cum praesentium voluptatibus recusandae?
             </p>
             <div class="button-container">
-            <div class='button -regular center'>Read More</div></div>
+              <div class="button -regular center">Read More</div>
+            </div>
           </div>
         </section>
       </div>
