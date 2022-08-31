@@ -5,6 +5,7 @@ import JoinUs from '../components/JoinUs/JoinUs';
 import ProductCard from '../components/ProductCards/ProductCard';
 import Inicial from '../components/Inicial/Inicial';
 import Footer from '../components/Footer/Footer';
+import Contador from '../components/Contador/Contador';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,6 +18,7 @@ const Inicio = ({ author, className, langKey }) => {
       <br></br>
       <br />
       <br></br>
+      <Contador />
       <br />
       <br></br>
       <br />

@@ -1,0 +1,41 @@
+.containerContador{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(20, 43, 247);
+
+
+}
+
+.contentContador{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contador{
+    font-size: 70px;
+    font-weight: 800;
+}
+
+
+.contador1{
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 45px;
+    font-weight: bolder;
+    margin-right: 80px;
+}
+
+
+.texto{
+    line-height: 0.2em;
+    font-weight: 700;
+    align-self: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;   
+}
