@@ -1,0 +1,280 @@
+.wrapperNV5{
+    background: #171c24;
+    position: fixed;
+    width: 100%;
+    height: 78px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    z-index: 500;
+  }
+  .wrapperNV5 nav{
+    position: relative;
+    display: flex;
+    max-width: calc(100% - 200px);
+    margin: 0 auto;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .contentNavbar{
+    display: flex;
+    align-items: center;
+  }
+  nav .contentNavbar .links{
+    margin-top: 15px;
+    margin-left: 40%;
+    display: flex;
+    z-index: 10;
+  
+  }
+  .contentNavbar .logoNV5 a{
+    color: #fff;
+    font-size: 25px;
+  }
+  .contentNavbar .links li{
+    list-style: none;
+    line-height: 70px;
+  }
+  .contentNavbar .links li a,
+  .contentNavbar .links li label{
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .contentNavbar .links li label{
+    display: none;
+  }
+  .contentNavbar .links li a:hover,
+  .contentNavbar .links li label:hover{
+    background: #323c4e;
+  }
+  .wrapperNV5 .search-icon,
+  .wrapperNV5 .menu-icon{
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 70px;
+    width: 70px;
+    text-align: center;
+  }
+  .wrapperNV5 .menu-icon{
+    display: none;
+  }
+  .wrapperNV5 #show-search:checked ~ .search-icon i::before{
+    content: "\f00d";
+  }
+  
+  nav .contentNavbar .links .liBoton{
+    margin-left: 50%;
+  }
+  
+  .wrapperNV5 .search-box{
+    position: absolute;
+    height: 100%;
+    max-width: calc(100% - 50px);
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .wrapperNV5 #show-search:checked ~ .search-box{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .search-box input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: #fff;
+    background: #171c24;
+    padding: 0 100px 0 15px;
+  }
+  .search-box input::placeholder{
+    color: #f2f2f2;
+  }
+  .search-box .go-icon{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 60px;
+    width: 70px;
+    background: #171c24;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .wrapperNV5 input[type="checkbox"]{
+    display: none;
+  }
+  
+  /* Dropdown Menu code start */
+  .contentNavbar .links ul{
+    position: absolute;
+    background: #171c24;
+    top: 80px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .contentNavbar .links li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+  }
+  .contentNavbar .links ul li a{
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    border-radius: 0px!important;
+  }
+  .contentNavbar .links ul ul{
+    position: absolute;
+    top: 0;
+    right: calc(-100% + 8px);
+  }
+  .contentNavbar .links ul li{
+    position: relative;
+  }
+  .contentNavbar .links ul li:hover ul{
+    top: 0;
+  }
+  
+  /* Responsive code start */
+  @media screen and (max-width: 1250px){
+    .wrapperNV5 nav{
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    nav .contentNavbar .links{
+      margin-left: 30px;
+    }
+    .contentNavbar .links li a{
+      padding: 8px 13px;
+    }
+    .wrapperNV5 .search-box{
+      max-width: calc(100% - 100px);
+    }
+    .wrapperNV5 .search-box input{
+      padding: 0 100px 0 15px;
+    }
+    nav .contentNavbar .links .liBoton{
+      margin-left: 10%;
+    }
+    
+  }
+  
+  @media screen and (max-width: 900px){
+    .wrapperNV5 .menu-icon{
+      display: block;
+    }
+    .wrapperNV5 #show-menu:checked ~ .menu-icon i::before{
+      content: "\f00d";
+    }
+    nav .contentNavbar .links{
+      display: block;
+      position: fixed;
+      background: #14181f;
+      height: 100%;
+      width: 100%;
+      top: 70px;
+      left: -100%;
+      margin-left: 0;
+      max-width: 350px;
+      overflow-y: auto;
+      padding-bottom: 100px;
+      transition: all 0.3s ease;
+    }
+    nav #show-menu:checked ~ .contentNavbar .links{
+      left: 0%;
+    }
+    .contentNavbar .links li{
+      margin: 15px 20px;
+    }
+    .contentNavbar .links li a,
+    .contentNavbar .links li label{
+      line-height: 40px;
+      font-size: 20px;
+      display: block;
+      padding: 8px 18px;
+      cursor: pointer;
+    }
+    .contentNavbar .links li a.desktop-link{
+      display: none;
+    }
+  
+    /* dropdown responsive code start */
+    .contentNavbar .links ul,
+    .contentNavbar .links ul ul{
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      background: none;
+      max-height: 0px;
+      overflow: hidden;
+    }
+    .contentNavbar .links #show-features:checked ~ ul,
+    .contentNavbar .links #show-services:checked ~ ul,
+    .contentNavbar .links #show-items:checked ~ ul{
+      max-height: 100vh;
+      z-index: 10;
+    }
+    .contentNavbar .links ul li{
+      margin: 7px 20px;
+    }
+    .contentNavbar .links ul li a{
+      font-size: 18px;
+      line-height: 30px;
+      border-radius: 5px!important;
+    }
+    nav .contentNavbar .links .liBoton{
+      margin-left: 10%;
+    }
+  }
+  
+  @media screen and (max-width: 400px){
+    .wrapperNV5 nav{
+      padding: 0 10px;
+    }
+    .contentNavbar .logoNV5 a{
+      font-size: 27px;
+    }
+    .wrapperNV5 .search-box{
+      max-width: calc(100% - 70px);
+    }
+    .wrapperNV5 .search-box .go-icon{
+      width: 30px;
+      right: 0;
+    }
+    .wrapperNV5 .search-box input{
+      padding-right: 30px;
+    }
+    nav .contentNavbar .links .liBoton{
+      margin-left: 10%;
+    }
+  }
+  
+  button.BotonNavbar {
+    transition: all .5s ease;
+    color: white;
+    border: 3px solid white;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    padding: 15px 35px;
+    outline: none;
+    border-radius: 100px;
+  }
+  button.BotonNavbar:hover {
+    color: #fff;
+    background-image: linear-gradient(45deg, #2d2f85, #af4297);
+  }

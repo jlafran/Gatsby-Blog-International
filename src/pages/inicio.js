@@ -7,12 +7,14 @@ import Inicial from '../components/Inicial/Inicial';
 import Footer from '../components/Footer/Footer';
 import Contador from '../components/Contador/Contador';
 import Clients from '../components/Clients/Clients';
+import Navbar from '../components/Navbar/Navbar';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Inicio = ({ author, className, langKey }) => {
   return (
     <>
+      <Navbar></Navbar>
       <Inicial></Inicial>
       <br></br>
       <br />
