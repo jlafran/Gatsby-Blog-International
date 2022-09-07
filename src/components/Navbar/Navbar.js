@@ -14,7 +14,7 @@ export default function Navbar(props) {
           </label>
           <div class="contentNavbar">
             <div class="logoNV5 semibold">
-              <a href="#">CodingNepal</a>
+              <a href="#">RTI</a>
             </div>
             <ul class="links">
               <li>
@@ -29,29 +29,24 @@ export default function Navbar(props) {
               </li>
               <li>
                 <a href="#" class="semibold desktop-link">
-                  Proyectos
+                  Idiomas
                 </a>
                 <input type="checkbox" id="show-features" />
-                <label for="show-features">Proyectos</label>
+                <label for="show-features">Idiomas</label>
                 <ul>
                   <li>
-                    <a class="medium" href="#">
-                      Crecer
+                    <a class="medium" href="/es">
+                      Spanish
                     </a>
                   </li>
                   <li>
-                    <a class="medium" href="#">
-                      CVs
+                    <a class="medium" href="/en">
+                      English
                     </a>
                   </li>
                   <li>
-                    <a class="medium" href="#">
-                      Calccitanium
-                    </a>
-                  </li>
-                  <li>
-                    <a class="medium" href="#">
-                      Gradientes
+                    <a class="medium" href="/fr">
+                      French
                     </a>
                   </li>
                 </ul>
@@ -99,12 +94,9 @@ export default function Navbar(props) {
                 </ul>
               </li>
               <li>
-                <a class="semibold" href="#">
+                <a class="semibold" href="/blog">
                   Blog
                 </a>
-              </li>
-              <li className="liBoton">
-                <button className="bold BotonNavbar">Contacto</button>
               </li>
             </ul>
           </div>

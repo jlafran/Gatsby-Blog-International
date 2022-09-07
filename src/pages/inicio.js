@@ -8,6 +8,9 @@ import Footer from '../components/Footer/Footer';
 import Contador from '../components/Contador/Contador';
 import Clients from '../components/Clients/Clients';
 import Navbar from '../components/Navbar/Navbar';
+import Freestyle from '../components/Freestyle/Freestyle';
+import MeetTeam from '../components/MeetTeam/MeetTeam';
+import TeamSection from '../components/TeamSection/TeamSection';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -16,24 +19,23 @@ const Inicio = ({ author, className, langKey }) => {
     <>
       <Navbar></Navbar>
       <Inicial></Inicial>
-      <br></br>
       <br />
-      <br></br>
       <br />
-      <br></br>
+      <br />
+      <ProductCard></ProductCard>
+      <br />
+      <br />
+      <br />
       <Contador />
       <br />
       <br />
       <br />
+      <TeamSection></TeamSection>
       <br />
-      <br></br>
+      <br />
+      <br />
       <Clients />
-      <br />
-      <ProductCard></ProductCard>
-      <br></br>
-      <br />
       <JoinUs></JoinUs>
-      <OurTeam></OurTeam>
       <Footer></Footer>
     </>
   );
