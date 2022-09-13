@@ -8,21 +8,14 @@
     box-sizing: border-box;
     text-decoration: none;
     z-index: 500;
-  }
-  .wrapperNV5 nav{
-    position: relative;
-    display: flex;
-    max-width: calc(100% - 200px);
-    margin: 0 auto;
-    height: 70px;
     align-items: center;
     justify-content: space-between;
   }
-  nav .contentNavbar{
+  .contentNavbar{
     display: flex;
     align-items: center;
   }
-  nav .contentNavbar .links{
+  .contentNavbar .links{
     margin-top: 15px;
     margin-left: 40%;
     display: flex;

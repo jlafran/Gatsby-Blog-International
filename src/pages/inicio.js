@@ -11,26 +11,34 @@ import Navbar from '../components/Navbar/Navbar';
 import Freestyle from '../components/Freestyle/Freestyle';
 import MeetTeam from '../components/MeetTeam/MeetTeam';
 import TeamSection from '../components/TeamSection/TeamSection';
+import NavbarNueva from '../components/NavbarNueva/NavbarNueva';
+import '../components/NavbarNueva/NavbarNueva.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Inicio = ({ author, className, langKey }) => {
   return (
     <>
-      <Navbar></Navbar>
-      <Inicial></Inicial>
+      <NavbarNueva></NavbarNueva>
+      <br />
+      <br />
       <br />
       <br />
       <br />
       <ProductCard></ProductCard>
       <br />
       <br />
+
       <br />
       <Contador />
       <br />
       <br />
       <br />
-      <TeamSection></TeamSection>
+      <br />
+      <Productos></Productos>
+      <br />
+      <br />
+
       <br />
       <br />
       <br />
