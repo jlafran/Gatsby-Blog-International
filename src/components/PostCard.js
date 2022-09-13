@@ -12,7 +12,7 @@ const PostCard = ({ post, author, imageOnTop }) => {
     <Wrapper imageOnTop={imageOnTop}>
       <Cell>
         <Link to={post.fields.slug}>
-          <Image sizes={post.frontmatter.image.childImageSharp.sizes} />
+          <img src='https://tmssl.akamaized.net/images/foto/galerie/juan-roman-riquelme-boca-juniors-2014-1575894893-28112.jpg?lm=1575894916'/>
         </Link>
       </Cell>
       <Cell>
