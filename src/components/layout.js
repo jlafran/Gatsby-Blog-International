@@ -8,6 +8,7 @@ import { StaticQuery, graphql, withPrefix } from 'gatsby';
 import { IntlProvider, FormattedMessage } from 'react-intl';
 import en from '../data/messages/en';
 import pt from '../data/messages/pt';
+import es from '../data/messages/es';
 import theme from '../themes/theme';
 import { getLangs, getUrlForLang, getCurrentLangKey, isHomePage } from 'ptz-i18n';
 import Helmet from 'react-helmet';
@@ -15,7 +16,7 @@ import Welcome from './Welcome';
 import Productos from '../components/Products/ProductsFilter';
 import OurTeam from '../components/OurTeam/OurTeam';
 
-const messages = { en, pt };
+const messages = { en, pt , es};
 
 const Layout = (props) => {
   const { children, location } = props;
@@ -198,7 +199,6 @@ export default (props) => (
             sourceCodeLink
             menu {
               label
-              link
               slug
             }
           }
