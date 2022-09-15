@@ -8,7 +8,6 @@ import Avatar from './img/welcome_avatar.png';
 import DATAES from '../data/es.json';
 import DATAEN from '../data/en.json';
 import DATAPT from '../data/pt.json';
-import { useStaticQuery, graphql } from 'gatsby';
 
 import Productos from '../components/Products/ProductsFilter';
 import OurTeam from '../components/OurTeam/OurTeam';
@@ -26,27 +25,10 @@ const stringifyPT = JSON.stringify(DATAPT);
 const bienvenidapt = JSON.parse(stringifyPT);
 
 const Welcome = ({ author, className, langKey }) => {
-  const data = useStaticQuery(graphql`
-    query QueryWelcome {
-      allJsonJson(filter: { language: { eq: "es" } }) {
-        edges {
-          node {
-            welcome
-          }
-        }
-      }
-    }
-  `);
-
-  console.log( data.allJsonJson.edges[0].node.welcome , 'data');
-  const variable = data.allJsonJson.edges[0].node.welcome
-  console.log(variable, 'variable')
-
-
-  const getIntro = (variable) => ({
+  const getIntro = () => ({
     en: bienvenidaen.welcome,
     pt: bienvenidapt.welcome,
-    es: variable,
+    es: bienvenidaes.welcome,
   });
   const getBio = () => ({
     en: bienvenidaen.introduccion,
@@ -64,7 +46,7 @@ const Welcome = ({ author, className, langKey }) => {
         <BioWrapper middle>
           <BioContainer>
             <Name>
-              <span dangerouslySetInnerHTML={{ __html: getIntro(variable)[langKey] }} />
+              <span dangerouslySetInnerHTML={{ __html: getIntro()[langKey] }} />
             </Name>
             <Bio dangerouslySetInnerHTML={{ __html: getBio()[langKey] }} />
             <SocialLinks>

@@ -15,7 +15,10 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 740,
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 760,
             },
           },
           {
@@ -37,28 +40,12 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-source-git`,
-      options: {
-        name: `content-rti`,
-        remote: `https://github.com/jlafran/content-rti.git`,
-        branch: `main`,
-        local: `'/src/pages/blog/'`,
-      },
-    },
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
         name: 'pages',
-      },
-    },
-    `gatsby-transformer-json`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `./src/data/`,
       },
     },
     {

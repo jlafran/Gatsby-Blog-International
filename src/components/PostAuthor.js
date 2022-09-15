@@ -10,7 +10,9 @@ const PostAuthor = ({ author, className, date, showFollow, timeToRead }) => {
   return (
     <Wrapper columns="50px 1fr" className={className}>
       <Cell middle>
-        <ProfilePicture email={author.email} alt={author.name} width={42} height={42} />
+        {/*         
+        <ProfilePicture email={author.email} alt={author.name} width={42} height={42} /> 
+        */}
       </Cell>
       <Cell middle>
         <span>

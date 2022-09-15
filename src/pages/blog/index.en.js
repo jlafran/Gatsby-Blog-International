@@ -23,7 +23,6 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          fileAbsolutePath
           frontmatter {
             title
             tags
