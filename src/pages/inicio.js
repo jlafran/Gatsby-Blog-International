@@ -13,13 +13,14 @@ import MeetTeam from '../components/MeetTeam/MeetTeam';
 import TeamSection from '../components/TeamSection/TeamSection';
 import NavbarNueva from '../components/NavbarNueva/NavbarNueva';
 import '../components/NavbarNueva/NavbarNueva.css';
+import Header from '../components/Header';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Inicio = ({ author, className, langKey }) => {
   return (
     <>
-      <NavbarNueva></NavbarNueva>
+
       <br />
       <br />
       <br />

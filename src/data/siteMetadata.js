@@ -17,13 +17,11 @@ module.exports = {
   disqusShortname: 'hugomagalhes',
   menu: [
     { label: 'home', slug: '/' },
-    { label: 'about', slug: '/about/' },
-    { label: 'blog', slug: '/blog/' },
-    { label: 'talks', slug: '/talks/' },
-    { label: 'contact', slug: '/contact/' },
-    { label: 'tags', slug: '/tags/' },
-    { label: 'call', link: 'http://call.hugo.im/' },
-  ],
+    { label: 'servicios', slug: '/servicios/' },
+    { label: 'productos', slug: '/productos/' },
+    { label: 'nosotros', slug: '/nosotros/' },
+    { label: 'blogs', slug: '/blog/' },
+    { label: 'contacto', slug: '/contacto/' }  ],
   languages,
   contact: [
     {

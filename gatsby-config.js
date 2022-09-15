@@ -51,7 +51,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'RTI',
+        name: 'RTI LATINA SRL',
         short_name: 'RTI',
         icons: [
           {
@@ -74,8 +74,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-i18n',
       options: {
-        langKeyForNull: 'en',
-        langKeyDefault: 'en',
+        langKeyForNull: 'es',
+        langKeyDefault: 'es',
         useLangKeyLayout: true,
         prefixDefault: false,
         markdownRemark: {
