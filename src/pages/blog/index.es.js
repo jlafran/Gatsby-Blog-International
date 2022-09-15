@@ -43,7 +43,7 @@ export const pageQuery = graphql`
               link
             }
           }
-          excerpt
+          excerpt(pruneLength: 110)
         }
       }
     }

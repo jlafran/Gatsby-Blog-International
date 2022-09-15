@@ -1,8 +1,8 @@
 import React from 'react';
-import TagsPage from '../../components/pages/Tags';
+import Tags from '../../components/Tag/Tags';
 import { graphql } from 'gatsby';
 
-export default (props) => <TagsPage {...props} />;
+export default (props) => <Tags {...props} />;
 
 export const pageQuery = graphql`
   query TagsEnQuery {

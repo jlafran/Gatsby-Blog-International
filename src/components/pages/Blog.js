@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 import Layout from '../layout';
 import styled from 'styled-components';
+import Tags from '../Tag/Tags';
 
 const Wrapper = styled.section`
   margin: ${(props) => props.theme.page.margin};
@@ -45,6 +46,7 @@ const Blog = (props) => {
         </FormattedMessage>
         <PostCardList posts={props.data.allMarkdownRemark.edges.map((p) => p.node)} author={author} imageOnTop />
       </Wrapper>
+      <Tags></Tags>
     </Layout>
   );
 };
