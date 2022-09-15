@@ -7,7 +7,7 @@ import { media } from '../constants/responsive';
 import Avatar from './img/welcome_avatar.png';
 import DATAES from '../data/es.json';
 import DATAEN from '../data/en.json';
-import DATAPT from '../data/pt.json';
+import DATAPT from '../data/fr.json';
 
 import Productos from '../components/Products/ProductsFilter';
 import OurTeam from '../components/OurTeam/OurTeam';
@@ -27,12 +27,12 @@ const bienvenidapt = JSON.parse(stringifyPT);
 const Welcome = ({ author, className, langKey }) => {
   const getIntro = () => ({
     en: bienvenidaen.welcome,
-    pt: bienvenidapt.welcome,
+    fr: bienvenidapt.welcome,
     es: bienvenidaes.welcome,
   });
   const getBio = () => ({
     en: bienvenidaen.introduccion,
-    pt: bienvenidapt.introduccion,
+    fr: bienvenidapt.introduccion,
     es: bienvenidaes.introduccion,
   });
   {

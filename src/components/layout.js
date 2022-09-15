@@ -7,7 +7,7 @@ import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { StaticQuery, graphql, withPrefix } from 'gatsby';
 import { IntlProvider, FormattedMessage } from 'react-intl';
 import en from '../data/messages/en';
-import pt from '../data/messages/pt';
+import pt from '../data/messages/fr';
 import es from '../data/messages/es';
 import theme from '../themes/theme';
 import { getLangs, getUrlForLang, getCurrentLangKey, isHomePage } from 'ptz-i18n';
@@ -24,7 +24,7 @@ const Layout = (props) => {
   const { langs, defaultLangKey } = props.data.site.siteMetadata.languages;
   const isHome = isHomePage(url, false, langs);
   const langKey = getCurrentLangKey(langs, defaultLangKey, url);
-  const homeLink = `/${langKey !== 'en' ? langKey : ''}`;
+  const homeLink = `/${langKey !== 'es' ? langKey : ''}`;
   const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url)).map((item) => ({
     ...item,
     link: item.link.replace(`/${defaultLangKey}/`, '/').replace(`//`, `/`),
@@ -57,7 +57,7 @@ const Layout = (props) => {
             )}
           </FormattedMessage>
           <Header isHome={isHome} homeLink={homeLink} langs={langsMenu} url={url} menu={menu} />
-          {(url === '/' || url === '/pt/' || url === '/es/') && <Welcome author={author} langKey={langKey} />}
+          {(url === '/' || url === '/fr/' || url === '/en/') && <Welcome author={author} langKey={langKey} />}
           {/* {isHome && <Welcome author={author} langKey={langKey} />} */}
           <Container>
             <main>{children}</main>
