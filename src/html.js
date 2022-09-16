@@ -18,7 +18,12 @@ export default class Html extends React.PureComponent {
           <meta name="google-site-verification" content="NBlqqXXD29lFhJ2PNcmH27JZzroE5sy8gLzE98af9EA" />
           {this.props.headComponents}
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-          <link rel="icon" type="image/png" sizes="192x192" href="https://rtitec.com.ar/wp-content/uploads/2020/05/LOGO-03.png" />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="https://rtitec.com.ar/wp-content/uploads/2020/05/LOGO-03.png"
+          />
           <link rel="manifest" href="/manifest.json" />
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="theme-color" content="#ffffff" />

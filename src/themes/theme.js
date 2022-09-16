@@ -211,7 +211,7 @@ const theme = {
         },
         title: {
           fontFamily: fonts.SansSerif,
-          fontSize: scale(.6),
+          fontSize: scale(0.6),
           lineHeight: scaleN(1),
           margin: `0 0 ${scale(-0.8)}`,
           color: colors.black,

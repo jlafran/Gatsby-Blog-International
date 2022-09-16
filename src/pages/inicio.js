@@ -14,13 +14,13 @@ import TeamSection from '../components/TeamSection/TeamSection';
 import NavbarNueva from '../components/NavbarNueva/NavbarNueva';
 import '../components/NavbarNueva/NavbarNueva.css';
 import Header from '../components/Header';
+import Servicios from '../components/Servicios/Servicios';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Inicio = ({ author, className, langKey }) => {
   return (
     <>
-
       <br />
       <br />
       <br />
@@ -39,6 +39,13 @@ const Inicio = ({ author, className, langKey }) => {
       <Productos></Productos>
       <br />
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Servicios></Servicios>
 
       <br />
       <br />

@@ -16,7 +16,7 @@ import Welcome from './Welcome';
 import Productos from '../components/Products/ProductsFilter';
 import OurTeam from '../components/OurTeam/OurTeam';
 
-const messages = { en, pt , es};
+const messages = { en, pt, es };
 
 const Layout = (props) => {
   const { children, location } = props;

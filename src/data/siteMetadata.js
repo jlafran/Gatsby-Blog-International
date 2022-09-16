@@ -21,7 +21,8 @@ module.exports = {
     { label: 'productos', slug: '/productos/' },
     { label: 'nosotros', slug: '/nosotros/' },
     { label: 'blogs', slug: '/blog/' },
-    { label: 'contacto', slug: '/contacto/' }  ],
+    { label: 'contacto', slug: '/contacto/' },
+  ],
   languages,
   contact: [
     {
