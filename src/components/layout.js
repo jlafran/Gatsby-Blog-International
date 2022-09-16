@@ -59,6 +59,10 @@ const Layout = (props) => {
           <Header isHome={isHome} homeLink={homeLink} langs={langsMenu} url={url} menu={menu} />
           {(url === '/' || url === '/fr/' || url === '/en/') && <Welcome author={author} langKey={langKey} />}
           {/* {isHome && <Welcome author={author} langKey={langKey} />} */}
+          <Container>
+            <main>{children}</main>
+          </Container>
+          <GlobalStyle />
         </BodyContainer>
       </IntlProvider>
     </ThemeProvider>
