@@ -6,6 +6,7 @@ import { FormattedMessage } from 'react-intl';
 import Layout from '../layout';
 import styled from 'styled-components';
 import Tags from '../Tag/Tags';
+import { Grid, Cell } from 'styled-css-grid';
 
 const Wrapper = styled.section`
   margin: ${(props) => props.theme.page.margin};
@@ -44,9 +45,15 @@ const Blog = (props) => {
             </Header>
           )}
         </FormattedMessage>
-        <PostCardList posts={props.data.allMarkdownRemark.edges.map((p) => p.node)} author={author} imageOnTop />
+        <Grid columns={"1fr 180px"}>
+          <Cell>
+            <PostCardList posts={props.data.allMarkdownRemark.edges.map((p) => p.node)} author={author} imageOnTop />
+          </Cell>
+          <Cell>
+            <Tags/>
+          </Cell>
+        </Grid>
       </Wrapper>
-      <Tags></Tags>
     </Layout>
   );
 };

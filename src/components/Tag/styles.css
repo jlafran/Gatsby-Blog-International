@@ -1,0 +1,8 @@
+.text-tag{
+    text-decoration: none;
+    color: 
+}
+
+.text-tag:hover{
+    color: rgb(48, 122, 233);
+}

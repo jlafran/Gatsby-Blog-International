@@ -3,6 +3,9 @@ import Img from 'gatsby-image';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import { Grid, Cell } from 'styled-css-grid';
 import kebabCase from 'lodash/kebabCase';
+import { FormattedMessage } from 'react-intl';
+import Helmet from 'react-helmet';
+import './styles.css'
 
 const Tags = () => {
     const data = useStaticQuery(graphql`
@@ -21,14 +24,23 @@ const Tags = () => {
     const allTags = data.allMarkdownRemark.group;
 
     return (
+      <>
+      <FormattedMessage id="tags">
+      {(txt) => (
+        <header>
+          <Helmet title={txt} meta={[{ name: 'description', content: txt }]} />
+          <h1>
+            <span>{txt}</span>
+          </h1>
+        </header>
+      )}
+    </FormattedMessage>
         <nav>
         <ul>
           {allTags.map((tag) => (
             <li key={tag.fieldValue}>
               <Link
-                style={{
-                  textDecoration: 'none',
-                }}
+                className='text-tag'
                 to={`/tags/${kebabCase(tag.fieldValue)}/`}
               >
                 {tag.fieldValue} ({tag.totalCount})
@@ -37,6 +49,7 @@ const Tags = () => {
           ))}
         </ul>
       </nav>
+      </>
       );
     };
     
