@@ -1,8 +1,15 @@
 .text-tag{
     text-decoration: none;
-    color: 
+    color: #212529;
+    font-weight: 600;
 }
 
 .text-tag:hover{
     color: rgb(48, 122, 233);
+}
+
+h4{
+    padding: 0.5rem 0 0.8rem;
+    margin:  0;
+    font-size: 1.4rem;
 }

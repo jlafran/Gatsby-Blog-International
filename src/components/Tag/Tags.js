@@ -5,9 +5,18 @@ import { Grid, Cell } from 'styled-css-grid';
 import kebabCase from 'lodash/kebabCase';
 import { FormattedMessage } from 'react-intl';
 import Helmet from 'react-helmet';
+import styled from 'styled-components';
 import './styles.css'
 
-const Tags = () => {
+const Wrapper = styled.section`
+  padding: ${(props) => props.theme.page.padding};
+  background-color: ${(props) => props.theme.colors.light};
+  border-radius:${(props) => props.theme.borderRadius};
+`;
+
+
+
+const Tags = (props) => {
     const data = useStaticQuery(graphql`
     query TagsQuery {
       allMarkdownRemark(
@@ -24,18 +33,18 @@ const Tags = () => {
     const allTags = data.allMarkdownRemark.group;
 
     return (
-      <>
-      <FormattedMessage id="tags">
+      <Wrapper className='wrapper-tag'>
+      <FormattedMessage id="tags" >
       {(txt) => (
         <header>
           <Helmet title={txt} meta={[{ name: 'description', content: txt }]} />
-          <h1>
+          <h4>
             <span>{txt}</span>
-          </h1>
+          </h4>
         </header>
       )}
     </FormattedMessage>
-        <nav>
+        <nav >
         <ul>
           {allTags.map((tag) => (
             <li key={tag.fieldValue}>
@@ -49,7 +58,7 @@ const Tags = () => {
           ))}
         </ul>
       </nav>
-      </>
+      </Wrapper>
       );
     };
     

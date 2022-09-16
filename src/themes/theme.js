@@ -14,6 +14,7 @@ const colors = {
   brand: brandColor,
   accent,
   white: '#FFFFFF',
+  light: '#F0F1F1',
   black: '#454545',
   dark,
   lightColors,
@@ -23,14 +24,60 @@ const colors = {
   green: '#00ab6b',
   darkGreen: '#038252',
   lightGreen: '#00ab6b2e',
-
   blackShades: ['#393E41'],
+};
+
+const size = {
+  h1: {
+    fontSize:"1rem",
+  },
+  h2: {
+    fontSize: scale(3.8),
+    margin: 0,
+    padding: `${scale(8)} 0 0 0`,
+  },
+  h3: {
+    fontSize: scale(3),
+    margin: 0,
+    padding: `${scale(6)} 0 0 0`,
+  },
+  h4: {
+    fontSize: scale(2),
+    margin: 0,
+    padding: `${scale(6)} 0 0 0`,
+  },
+  h5: {
+    fontSize: scale(1),
+    margin: 0,
+    padding: `${scale(4)} 0 0 0`,
+  },
+  h6: {
+    fontSize: scale(1),
+    margin: 0,
+    padding: `${scale(4)} 0 0 0`,
+  },
+  focus: {
+    border: '0.4rem red solid',
+  },
+  p: {
+    fontSize: scale(1.25),
+    lineHeight: 1.58,
+  },
+  a: {
+    color: colors.brand,
+    textDecoration: 'none',
+    hover: {
+      color: colors.accent[0],
+      textDecoration: 'underline',
+    },
+  }
 };
 
 const theme = {
   scale,
   scaleN,
   colors,
+  size,
   fonts,
   color: colors.black,
   bg: colors.white,
@@ -39,6 +86,36 @@ const theme = {
   maxWidth: '71.25rem',
   borderRadius: '0.2rem',
   lineHeight: 1.5,
+  h1: {
+    fontSize: scale(50.8),
+    margin: 0,
+    padding: `${scale(8)} 0 0 0`,
+  },
+  h2: {
+    fontSize: scale(3.8),
+    margin: 0,
+    padding: `${scale(8)} 0 0 0`,
+  },
+  h3: {
+    fontSize: scale(3),
+    margin: 0,
+    padding: `${scale(6)} 0 0 0`,
+  },
+  h4: {
+    fontSize: scale(2),
+    margin: 0,
+    padding: `${scale(6)} 0 0 0`,
+  },
+  h5: {
+    fontSize: scale(1),
+    margin: 0,
+    padding: `${scale(4)} 0 0 0`,
+  },
+  h6: {
+    fontSize: scale(1),
+    margin: 0,
+    padding: `${scale(4)} 0 0 0`,
+  },
   focus: {
     border: '0.4rem red solid',
   },

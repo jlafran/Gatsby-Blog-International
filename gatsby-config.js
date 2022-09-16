@@ -103,8 +103,8 @@ module.exports = {
         // Default options
         tagPage: 'src/templates/tag-page.js',
         tagsUrl: '/tags/',
-        langKeyForNull: 'en',
-        langKeyDefault: 'en',
+        langKeyForNull: 'es',
+        langKeyDefault: 'es',
         prefixDefault: false,
       },
     },
