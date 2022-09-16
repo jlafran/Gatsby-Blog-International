@@ -15,6 +15,24 @@ import JoinUs from '../components/JoinUs/JoinUs';
 import ProductCard from '../components/ProductCards/ProductCard';
 import Inicial from '../components/Inicial/Inicial';
 
+import Footer from '../components/Footer/Footer';
+import Contador from '../components/Contador/Contador';
+import Clients from '../components/Clients/Clients';
+import Navbar from '../components/Navbar/Navbar';
+import Freestyle from '../components/Freestyle/Freestyle';
+import MeetTeam from '../components/MeetTeam/MeetTeam';
+import TeamSection from '../components/TeamSection/TeamSection';
+import NavbarNueva from '../components/NavbarNueva/NavbarNueva';
+import '../components/NavbarNueva/NavbarNueva.css';
+import Header from '../components/Header';
+import Servicios from '../components/Servicios/Servicios';
+
+const data = {
+  titulo:"LIBROS",
+}
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const stringifyES = JSON.stringify(DATAES);
@@ -40,69 +58,39 @@ const Welcome = ({ author, className, langKey }) => {
   }
 
   return (
-    <MainWrapper className={className}>
-      <Wrapper>
-        <LeftGapCell />
-        <BioWrapper middle>
-          <BioContainer>
-            <Name>
-              <span dangerouslySetInnerHTML={{ __html: getIntro()[langKey] }} />
-            </Name>
-            <Bio dangerouslySetInnerHTML={{ __html: getBio()[langKey] }} />
-            <SocialLinks>
-              <li>
-                <A href="http://twitter.hugo.im" target="_blank" rel="noreferrer noopener">
-                  <FaTwitter />
-                </A>
-              </li>
-              <li>
-                <A href="http://linkedin.hugo.im" target="_blank" rel="noreferrer noopener">
-                  <FaLinkedin />
-                </A>
-              </li>
-              <li>
-                <A href="http://instagram.hugo.im" target="_blank" rel="noreferrer noopener">
-                  <FaInstagram />
-                </A>
-              </li>
-              <li>
-                <A href="http://facebook.hugo.im" target="_blank" rel="noreferrer noopener">
-                  <FaFacebook />
-                </A>
-              </li>
-              <li>
-                <A href="http://dribbble.hugo.im" target="_blank" rel="noreferrer noopener">
-                  <FaDribbble />
-                </A>
-              </li>
-              <li>
-                <A href="http://github.hugo.im" target="_blank" rel="noreferrer noopener">
-                  <FaGithub />
-                </A>
-              </li>
-            </SocialLinks>
-          </BioContainer>
-        </BioWrapper>
-        <PictureContainer center>
-          <ProfilePicture src={Avatar} alt="RTI" width={410} height={341} />
-        </PictureContainer>
-        <RightGapCell />
-      </Wrapper>
-      <Productos></Productos>
-      <br></br>
-      <br />
-      <br></br>
-      <br />
-      <br></br>
-      <br />
-      <br></br>
-      <br />
-      <Inicial></Inicial>
-      <ProductCard></ProductCard>
+    <>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <ProductCard></ProductCard>
+    <br />
+    <br />
 
-      <OurTeam></OurTeam>
-      <JoinUs></JoinUs>
-    </MainWrapper>
+    <br />
+    <Contador />
+    <br />
+    <br />
+    <br />
+    <br />
+    <Productos></Productos>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <Servicios data={data}></Servicios>
+
+    <br />
+    <br />
+    <br />
+    <Clients />
+    <JoinUs></JoinUs>
+    <Footer></Footer></>
   );
 };
 

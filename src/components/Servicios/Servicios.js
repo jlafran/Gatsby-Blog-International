@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import './Servicios.scss';
 
-function Servicios() {
+function Servicios({data}) {
   return (
     <>
     <div class="image-card-container">
       <div class="image-card image-card--horizontal">
         <img class="image-card__image" alt="" src="https://statics.globant.com/production/public/2019-04/GettyImages-538096543_medium%20Copy%203.png" />
         <div class="image-card__content image-card__content--soft-background">
-          <h2 class="image-card__title">LIBROS</h2>
+          <h2 class="image-card__title">{data.titulo}</h2>
           <p class="image-card__description">Nuestros expertos han escrito los siguientes libros: “Embracing the Power of AI. A gentle CxO Guide”, que ayuda a desmitificar el deep learning, el machine learning y la inteligencia artificial, y a adherir a la revolución de la inteligencia aumentada que se avecina.“ The Never Ending Digital Journey” brinda a los lectores los conceptos y pasos necesarios para crear experiencias de usuario exitosas. Los autores se anticipan y exploran escenarios digitales del futuro.</p>
           <a class="linkCARD" href="#">
             MAS INFORMACION

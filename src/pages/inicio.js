@@ -16,6 +16,10 @@ import '../components/NavbarNueva/NavbarNueva.css';
 import Header from '../components/Header';
 import Servicios from '../components/Servicios/Servicios';
 
+const data = {
+  titulo:"LIBROS",
+}
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Inicio = ({ author, className, langKey }) => {
@@ -45,7 +49,7 @@ const Inicio = ({ author, className, langKey }) => {
       <br />
       <br />
       <br />
-      <Servicios></Servicios>
+      <Servicios data={data}></Servicios>
 
       <br />
       <br />

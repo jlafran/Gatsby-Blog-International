@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'RTI',
-  'header.title': 'RTI',
+  title: 'RTI LATINA SRL',
+  'header.title': 'RTI LATINA SRL',
   'header.subTitle': 'Engineering lead and agile manager.',
   home: 'Página principal',
   about: 'Sobre',

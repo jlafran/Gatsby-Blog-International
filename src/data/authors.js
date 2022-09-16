@@ -1,11 +1,11 @@
 const authors = {
   hugomn: {
-    name: 'RTI',
+    name: 'RTI LATINA SRL',
     additionalName: 'hugomn',
     address: 'Berlin DE',
     birthDate: '1986-09-01',
     birthPlace: 'Juiz de Fora BR',
-    brand: 'RTI',
+    brand: 'RTI LATINA SRL',
     children: '...',
     email: 'hugomn@gmail.com',
     familyName: 'Nogueira',

@@ -52,7 +52,7 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'RTI LATINA SRL',
-        short_name: 'RTI',
+        short_name: 'RTI LATINA SRL',
         icons: [
           {
             src: '/logo.svg',
