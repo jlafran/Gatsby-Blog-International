@@ -45,7 +45,7 @@ const Blog = (props) => {
             </Header>
           )}
         </FormattedMessage>
-        <Grid columns={"1fr 200px"} gap="30px">
+        <Grid columns={"1fr 220px"} gap="30px">
           <Cell>
             <PostCardList posts={props.data.allMarkdownRemark.edges.map((p) => p.node)} author={author} imageOnTop />
           </Cell>

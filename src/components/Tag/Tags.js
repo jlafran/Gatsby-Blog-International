@@ -45,16 +45,16 @@ const Tags = (props) => {
       )}
     </FormattedMessage>
         <nav >
-        <ul>
+        <ul style={{margin:0, paddingLeft:0,justifyContent: "center", textAlign:"left"}}>
           {allTags.map((tag) => (
-            <li key={tag.fieldValue}>
-              <Link
-                className='text-tag'
-                to={`/tags/${kebabCase(tag.fieldValue)}/`}
-              >
+            <Link
+            style={{color: "#212529", textDecoration:"none"}}
+            to={`/tags/${kebabCase(tag.fieldValue)}/`}
+          >
+            <li key={tag.fieldValue} className='text-tag'>
                 {tag.fieldValue} ({tag.totalCount})
-              </Link>
             </li>
+            </Link>
           ))}
         </ul>
       </nav>

@@ -1,11 +1,15 @@
 .text-tag{
     text-decoration: none;
-    color: #212529;
     font-weight: 600;
+    border-radius: 4px;
+    margin: .5rem 0rem;
+    padding-left:1vmax;
+    justify-content: space-between;
 }
 
 .text-tag:hover{
-    color: rgb(48, 122, 233);
+    color: white;
+    background-color: grey;
 }
 
 h4{
