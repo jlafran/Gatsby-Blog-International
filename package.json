@@ -44,7 +44,7 @@
     "lint": "./node_modules/.bin/eslint --fix --ext .js,.jsx --ignore-pattern public .",
     "build": "rm -rf public/*.html && gatsby build",
     "predeploy": "yarn run build && rm public/*.js.map",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop ",
     "test": "jest",
     "test:watch": "jest --watch",
     "serve": "yarn run build && gatsby serve"
