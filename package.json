@@ -1,8 +1,8 @@
 {
-  "name": "hugomn",
-  "description": "Hugo Nogueira, Software Engineer, Lead Front-end engineer, Senior ReactJs developer",
+  "name": "RTI Latina",
+  "description": "Pagina web RTI LATINA",
   "version": "1.0.0",
-  "author": "Hugo Nogueira <hugomn@gmail.com>",
+  "author": "Juan Cruz Lafranconi - Franco Toretta",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "7.12.1",
     "@babel/preset-env": "7.12.11",
