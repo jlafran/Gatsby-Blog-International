@@ -15,7 +15,6 @@ const Wrapper = styled.section`
 `;
 
 
-
 const Tags = (props) => {
     const data = useStaticQuery(graphql`
     query TagsQuery {

@@ -9,7 +9,7 @@ module.exports = {
   posts: 'Posts',
   talks: 'Llamadas',
   'posts.seeMore': 'Ver todos os posts →',
-  tags: 'Post Tags',
+  tags: 'Categorias',
   'tags.allTagsLink': 'Ver todas as tags',
   'tags.nPostsTaggedWith': `{nPosts, number} {nPosts, plural,
       one {post}
