@@ -4,7 +4,7 @@
     border-radius: 29px;
     background-color: #c3d500;
     color: #fff;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: bold;
     letter-spacing: normal;
     display: flex;
@@ -12,7 +12,7 @@
     text-decoration: none;
     position: absolute;
     justify-content: flex-end;
-    bottom: 20px;
+    bottom: 5px;
 }
 
 
@@ -20,8 +20,9 @@
 .image-card-container {
 	display: grid;
 	grid-template-columns: repeat(2, 2fr);
-	grid-gap: 4rem;
+	grid-gap: 3rem;
 	width: 80vw;
+    height: 60vh;
 	margin: auto;
 }
 
@@ -81,18 +82,18 @@
 
 .image-card__title {
 	display: block;
-	margin: 0 0 1rem 0;
-	font-size: 1.8rem;
-	line-height: 1.35;
+	margin: 0 0 10px;
+	font-size: 1.5rem;
+	line-height: 1.15;
 	font-weight: bold;
+    align-self: flex-start;
 }
 
 .image-card__description {
     text-align: left;
 	display: block;
 	margin: 0 0 1rem 0;
-	font-size: 1.2rem;
-	line-height: 1.35;
+	font-size: 0.9rem;
 	color: #000000;
 }
 
@@ -147,8 +148,8 @@
         text-align: left;
         display: block;
         margin: 0 0 1rem 0;
-        font-size: 0.8rem;
-        line-height: 1.35;
+        font-size: 0.6rem;
+        line-height: 1.15;
         color: #000000;
     }
 }
@@ -176,9 +177,9 @@
 @media only screen and (max-width: 1200px) {
     .image-card-container {
         display: grid;
-        grid-template-columns: repeat(2, 2fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 4rem;
-        width: 100%;
+        width: 85%;
         margin: auto;
     }
     .image-card__content {
@@ -212,8 +213,8 @@
 
     .linkCARD{
         align-self: flex-end;
-        font-size: 0.8rem;
-        bottom: 5px;
+        font-size: 1.0rem;
+        bottom: 20px;
     }
 
 }

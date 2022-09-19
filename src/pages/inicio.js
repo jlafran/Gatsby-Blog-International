@@ -17,8 +17,8 @@ import Header from '../components/Header';
 import Servicios from '../components/Servicios/Servicios';
 
 const data = {
-  titulo:"LIBROS",
-}
+  titulo: 'LIBROS',
+};
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 

@@ -28,8 +28,8 @@ import Header from '../components/Header';
 import Servicios from '../components/Servicios/Servicios';
 
 const data = {
-  titulo:"LIBROS",
-}
+  titulo: 'LIBROS',
+};
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -41,6 +41,11 @@ const stringifyEN = JSON.stringify(DATAEN);
 const bienvenidaen = JSON.parse(stringifyEN);
 const stringifyPT = JSON.stringify(DATAPT);
 const bienvenidapt = JSON.parse(stringifyPT);
+
+const WrapperMain = styled.section`
+  margin: ${(props) => props.theme.page.margin};
+  padding: 0 15vmax;
+`;
 
 const Welcome = ({ author, className, langKey }) => {
   const getIntro = () => ({
@@ -58,39 +63,75 @@ const Welcome = ({ author, className, langKey }) => {
   }
 
   return (
-    <>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <ProductCard></ProductCard>
-    <br />
-    <br />
+    <WrapperMain>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <ProductCard></ProductCard>
+      <br />
+      <br />
 
-    <br />
-    <Contador />
-    <br />
-    <br />
-    <br />
-    <br />
-    <Productos></Productos>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <Servicios data={data}></Servicios>
+      <br />
+      <Contador />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Productos></Productos>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Servicios data={data}></Servicios>
 
-    <br />
-    <br />
-    <br />
-    <Clients />
-    <JoinUs></JoinUs>
-    <Footer></Footer></>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Clients />
+      <JoinUs></JoinUs>
+      <Footer></Footer>
+    </WrapperMain>
   );
 };
 
