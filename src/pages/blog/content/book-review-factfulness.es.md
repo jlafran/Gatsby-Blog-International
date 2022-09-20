@@ -6,8 +6,7 @@ draft: false
 featured: true
 tags:
   - books
-  - economy
-  - factfulness
+  - experiencia
 image: ./images/20210110.jpg
 ---
 

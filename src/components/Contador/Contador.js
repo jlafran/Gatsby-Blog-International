@@ -8,21 +8,29 @@ function Contador() {
       <div class="containerContador">
         <div class="contentContador">
           <div class="contador1">
-            <CountUp end={8} className="contador" />
-            <p class="texto">YEARS</p>
-            <p class="texto"> IN BUSINESS</p>
+            <CountUp end={4000} className="contador" />
+            <p class="texto">CLIENTES</p>
+            <p class="texto"> SATISFECHOS</p>
           </div>
           <div class="contador1">
-            <CountUp end={150} className="contador" />
-            <p class="texto">HAPPY</p>
-            <p class="texto">CLIENTS</p>
+            <CountUp end={50000} className="contador" />
+            <p class="texto">EQUIPOS FISCALES</p>
+            <p class="texto">INSTALADOS</p>
           </div>
           <div class="contador1">
-            <CountUp end={28} className="contador" />
+            <CountUp end={3} className="contador" />
             <div class="divTexto">
-              <p class="texto">FULL-TIME</p>
-              <p class="texto">SPECIALISTS</p>
+              <p class="texto">PROYECTOS</p>
+              <p class="texto">EXTERIORES</p>
             </div>
+          </div>
+          <div class="contador1">
+            <CountUp end={8000} className="contador" />
+            <div class="divTexto">
+              <p class="texto">SISTEMAS</p>
+              <p class="texto">INSTALADOS</p>
+            </div>
+            
           </div>
         </div>
       </div>
