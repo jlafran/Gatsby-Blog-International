@@ -21,24 +21,6 @@ const Index = (props) => {
 
   return (
     <Layout location={props.location}>
-      <Wrapper>
-        <FeaturedContainer>
-          <H2>
-            <span dangerouslySetInnerHTML={{ __html: getTitle()[langKey] }} />
-          </H2>
-          <PostCardList posts={featuredPosts} author={author} />
-        </FeaturedContainer>
-        <AllStoriesContainer>
-          <H2>
-            <FormattedMessage id="index.stories">{(txt) => <span>{txt}</span>}</FormattedMessage>
-          </H2>
-          <PostCardList posts={allStoriesPosts} author={author} imageOnTop />
-          <FormattedMessage id="posts.seeMore">
-            {(txt) => <BtnLink to={`/${langKey !== 'en' ? `${langKey}/` : ''}blog`}>{txt}</BtnLink>}
-          </FormattedMessage>
-        </AllStoriesContainer>
-        <NewsletterForm />
-      </Wrapper>
     </Layout>
   );
 };
