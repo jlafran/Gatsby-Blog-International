@@ -30,7 +30,7 @@ const Layout = (props) => {
     link: item.link.replace(`/${defaultLangKey}/`, '/').replace(`//`, `/`),
   }));
   const { menu, author, sourceCodeLink, siteUrl, description } = props.data.site.siteMetadata;
-  console.log(menu);
+  console.log({children}, 'children')
 
   return (
     <ThemeProvider theme={theme}>
@@ -59,6 +59,9 @@ const Layout = (props) => {
           <Header isHome={isHome} homeLink={homeLink} langs={langsMenu} url={url} menu={menu} />
           {(url === '/' || url === '/fr/' || url === '/en/') && <Welcome author={author} langKey={langKey} />}
           {/* {isHome && <Welcome author={author} langKey={langKey} />} */}
+          <Container>
+            <main>{children}</main>
+          </Container>
           <GlobalStyle />
         </BodyContainer>
       </IntlProvider>
